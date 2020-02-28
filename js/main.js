@@ -1,11 +1,11 @@
 
 
-$('#mario').mouseenter(function() {
-    $('#mario').addClass('colore')
-})
-$('#mario').mouseleave(function() {
-    $('#mario').removeClass('colore')
-})
+// $('#mario').mouseenter(function() {
+//     $('#mario').addClass('colore')
+// })
+// $('#mario').mouseleave(function() {
+//     $('#mario').removeClass('colore')
+// })
 
 // var elemento= document.getElementById('mario');
 //
@@ -15,3 +15,17 @@ $('#mario').mouseleave(function() {
 // elemento.addEventListener('click', function(){
 //     alert('BOOM');
 // });
+
+// $(".header-right > a").click(function(){
+//     $(".hamburger-menu").addClass("active");
+//
+// });
+//
+// $(".close").click(function(){
+//     $(".hamburger-menu").removeClass("active");
+//
+// });
+$(".header-right > a, .close").click(function(){
+    $(".hamburger-menu").toggleClass("active");
+
+});
